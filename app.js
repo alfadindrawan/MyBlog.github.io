@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('top.ejs');
+  res.render('index.html');
 });
 
 
