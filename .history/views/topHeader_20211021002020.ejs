@@ -1,0 +1,11 @@
+<header>
+      <ul>
+        <% if(locals.isLoggedIn) { %>
+          <li><a href="/logout">Logout</a></li>
+          <% }else{ %>
+            <li><a href="/signup">Daftar</a></li>
+            <li><a href="/login">Login</a></li>
+            <% }; %>
+      </ul>
+    <p>Welcome to My Blog</p>
+  </header>
