@@ -1,0 +1,23 @@
+    <head>
+      <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    
+    <body>
+      
+      <header>
+        <script src="css/b"></script>
+          <div class="topHeader">
+              <h3>Alfad's Blog</h3>
+              <ul>
+                <% if(locals.isLoggedIn) { %>
+                  <li><a href="/logout">Logout</a></li>
+                  <% }else{ %>
+                    <li><a href="/signup">Daftar</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <% }; %>
+              </ul>
+          </div>
+      </header>
+    </body>
+    
+    

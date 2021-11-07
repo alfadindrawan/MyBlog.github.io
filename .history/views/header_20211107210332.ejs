@@ -1,0 +1,49 @@
+
+
+
+
+<header>
+  <!-- <div class="header-nav">
+    <a href="/">BLOG</a>
+    <p>Selamat datang <%= locals.username %>
+    </p>
+    <ul>
+      <li><a href="/list">Artikel</a></li>
+
+      <% if(locals.isLoggedIn) { %>
+        <li><a href="/logout">Logout</a></li>
+        <% }else{ %>
+          <li><a href="/signup">Daftar</a></li>
+          <li><a href="/login">Login</a></li>
+          <% }; %>
+    </ul>
+  </div>
+  <p>Welcome to My Blog</p> -->
+
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/">BLOG</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/list">Artikel</a>
+    </li>
+
+    <% if(locals.isLoggedIn){ %>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+      <% }else{ %>
+
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/signup">SignUp</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">Login</a>
+      </li>
+
+    <% } %>
+  </ul>
+</header>
