@@ -1,0 +1,40 @@
+
+      
+      <header>
+          <!-- <div class="topHeader">
+              <h3>Alfad's Blog</h3>
+              <ul>
+                <% if(locals.isLoggedIn) { %>
+                  <li><a href="/logout">Logout</a></li>
+                  <% }else{ %>
+                    <li><a href="/signup">Daftar</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <% }; %>
+              </ul>
+          </div> -->
+
+
+          <ul class="nav justify-content-end" style="margin: 15px 0 , ;" >
+        
+            <% if(locals.isLoggedIn){ %>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+              <% }else{ %>
+        
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">SignUp</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="login">Login</a>
+              </li>
+        
+            <% } %>
+          </ul>
+      </header>
+
+    
+    

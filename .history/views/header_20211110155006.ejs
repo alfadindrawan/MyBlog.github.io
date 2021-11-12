@@ -1,0 +1,76 @@
+
+
+<header>
+  <!-- <div class="header-nav">
+    <a href="/">BLOG</a>
+    <p>Selamat datang <%= locals.username %>
+    </p>
+    <ul>
+      <li><a href="/list">Artikel</a></li>
+
+      <% if(locals.isLoggedIn) { %>
+        <li><a href="/logout">Logout</a></li>
+        <% }else{ %>
+          <li><a href="/signup">Daftar</a></li>
+          <li><a href="/login">Login</a></li>
+          <% }; %>
+    </ul>
+  </div>
+  <p>Welcome to My Blog</p> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <p>Selamat datang <%= locals.username %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+
+        <% if(locals.isLoggedIn){ %>
+        <a class="nav-item nav-link" href="/logout">Logout</a>
+        <% }else{ %>
+        <a class="nav-item nav-link" href="/signup">Signup</a>
+        <a class="nav-item nav-link disabled" href="/login">Login</a>
+        <% } %>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
+    <div class="container-fluid">
+    <p class="navbar-brand" style="margin-bottom: 0;">Selamat datang <%= locals.username %></p>
+      <a class="navbar-brand" href="/">BLOG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BLOG
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="/">Home</a></li>
+
+              <% if(isLoggedIn){ %>
+              <li><a class="dropdown-item" href="/logout">LogOut</a></li>
+              <% }else{ %>
+
+                <li><a class="dropdown-item" href="/login">LogIn</a></li>
+                <li><a class="dropdown-item" href="/signup">SignUp</a></li>
+              <% } %>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  
+
+
+
+  
+</header>
